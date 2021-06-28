@@ -14,10 +14,12 @@ Automate creating the minimal Ubuntu VM and start on Windows.
     git clone https://github.com/vadxx/vagrant-vm.git
     cd vagrant-vm
 ```
-
-2. Run VM and connect via SSH:
+2. Run VM:
 ```cmd
     vagrant up
+```
+3. Connect via SSH:
+```cmd
     vagrant ssh
 ```
 
@@ -27,7 +29,14 @@ Automate creating the minimal Ubuntu VM and start on Windows.
     vagrant reload
 ```
 
-Note: default user and password is `vagrant`
+Notes: 
+* default user and password is `vagrant`
+* connect to VM in any place:
+```cmd
+    ssh default
+```
+* use VSCode with [Remote - SSH Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) 
+![](vscode-remote.png)
 
 ## Optional
 1. Share ssh-config to global SSH (command: `ssh default`):
