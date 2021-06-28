@@ -1,13 +1,4 @@
 #!/bin/bash
-
-set_vm_permissions() {
-	echo "Fixing permissions for VBOX..."
-	groups
-	sudo usermod -aG vboxusers $USER
-	exec su -l $USER
-	groups
-}
-
 update_os() {
 	echo "Updating OS..."
 	sudo apt update && sudo apt upgrade
@@ -21,7 +12,6 @@ setup_welcome_msg() {
 }
 
 main() {
-	# set_vm_permissions
 	update_os
 	setup_welcome_msg
 }
