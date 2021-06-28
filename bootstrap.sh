@@ -1,4 +1,9 @@
 #!/bin/bash
+
+fix_perms() {
+	sudo usermod -aG vboxsf $USER
+}
+
 update_os() {
 	echo "Updating OS..."
 	sudo apt update && sudo apt upgrade
@@ -12,6 +17,7 @@ setup_welcome_msg() {
 }
 
 main() {
+	fix_perms
 	update_os
 	setup_welcome_msg
 }
