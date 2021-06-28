@@ -35,7 +35,7 @@ Notes:
 ```cmd
     ssh default
 ```
-* use VSCode with [Remote - SSH Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) 
+* use VSCode with [Remote - SSH Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)   
 ![](vscode-remote.png)
 
 ## Optional
