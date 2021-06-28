@@ -7,20 +7,29 @@ Configurations for create the Linux VM and start on Windows.
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 ## Usage:
-1. Clone this repo and go to folder:
-```bash
+1. Open `cmd` and clone this repo and go to folder:
+```cmd
     git clone https://github.com/vadxx/vagrant-vm.git
     cd vagrant-vm
 ```
 
 2. Run VM and connect via SSH
-```bash
+```cmd
     vagrant up
     vagrant ssh
 ```
 
+## Optional
+1. Share ssh-config to global SSH (command: `ssh ubuntu2004`)
+```cmd
+    mkdir %HOMEPATH%\.ssh
+    vagrant ssh-config > %HOMEPATH%\.ssh\config
+```
+
+
 ## Helpful sources:
 * [Getting started in Vagrant](https://learn.hashicorp.com/collections/vagrant/getting-started)
+* [Default env variables in Windows](https://www.computerhope.com/issues/ch000088.htm)
 
 
 ### Based on:
