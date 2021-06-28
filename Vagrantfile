@@ -1,10 +1,8 @@
 Vagrant.configure("2") do |config|
     config.vm.box = "generic/ubuntu2004"
-    config.vm.define "ubuntu2004" do |ubuntu|
-        ubuntu.vm.hostname = "ubuntu"
-    end
-
+    config.vm.hostname = "vbuntu"
     config.vm.provider "virtualbox" do |vb|
+        vb.name = "vbuntu"
         vb.gui = true
         vb.cpus = 2
         vb.memory = "2048"
