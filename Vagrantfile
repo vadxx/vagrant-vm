@@ -7,9 +7,11 @@ Vagrant.configure("2") do |config|
     config.vm.provider "virtualbox" do |vb|
         vb.name = "vbuntu"
         vb.gui = true
-        vb.cpus = 2
-        vb.memory = "2048"
-        vb.customize ["modifyvm", :id, "--vram", "128"]
+        vb.customize ["modifyvm", :id, "--vram", "256"]
+        vb.customize ['modifyvm', :id, '--accelerate3d', 'on']
+        vb.customize ['modifyvm', :id, '--graphicscontroller', 'vmsvga']
+        vb.cpus = 3
+        vb.memory = "4096"
         vb.customize ["modifyvm", :id, "--usbxhci", "on"]  # USB 3.0
         vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
         vb.customize ["modifyvm", :id, "--draganddrop", "bidirectional"]
