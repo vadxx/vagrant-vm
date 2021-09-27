@@ -1,6 +1,6 @@
 # vagrant-vm
 Automate creating the minimal Ubuntu VM and start on Windows.  
-![HTOP](./htop.png)
+![HTOP](assets/htop.png)
 
 
 ## Requirements:
@@ -43,7 +43,7 @@ Notes:
     ssh default
 ```
 * Use VSCode with [Remote - SSH Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)   
-![VSCode Remote](vscode-remote.png)
+![VSCode Remote](assets/vscode-remote.png)
 
 
 * Destroy your local VM:
